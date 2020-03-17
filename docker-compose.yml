@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    image: kissjared/php-nginx-alpine:7.4
+    ports:
+      - "8080:80"
+    volumes:
+      - ${CODE_DIR}:/var/www/html
+      - ${NGINX_CONF_DIR}:/etc/nginx/conf.d
+      - ${FPM_INCLUDE_DIR}/www.conf:/usr/local/etc/php-fpm.d/www.conf
