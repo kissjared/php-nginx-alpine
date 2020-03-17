@@ -7,19 +7,17 @@ This PHP docker image based on [kissjared/php](https://hub.docker.com/r/kissjare
 - [`7.4`, `latest` (Dockerfile)](https://github.com/kissjared/php-nginx-alpine/blob/master/Dockerfile)
 
 
+## Nginx Configuration
+* Nginx version:          `nginx/1.16.1`
+* Nginx conf path:        `/etc/nginx/nginx.conf`
+* Nginx vhost path:       `/etc/nginx/conf.d/*.conf`
+
 ## PHP Configuration
 * PHP version:            `PHP 7.4.3`
-* PHP FPM defconfig:      `/usr/local/etc/`
 * PHP FPM core config:    `/usr/local/etc/php-fpm.conf`
 * PHP FPM include config: `/usr/local/etc/php-fpm.d/`
-* PHP shared extensions:  `/usr/local/lib/php/extensions/no-debug-non-zts-20190902/`
-* PHP CLI binary:         `/usr/local/bin/`
-* PHP FPM binary:         `/usr/local/sbin/`
-### Fix iconv character encoding conversion error
-```
-apk add --no-cache gnu-libiconv
-```
-### Install composer
+
+### Composer installation and configuration instructions
 ```
 # Install composer
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
