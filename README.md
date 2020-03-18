@@ -1,4 +1,5 @@
 # Docker Image for PHP7 AND Nginx
+[![Build Status](https://travis-ci.org/kissjared/php-nginx-alpine.svg?branch=master)](https://travis-ci.org/kissjared/php-nginx-alpine)
 
 This PHP docker image based on [kissjared/php](https://hub.docker.com/r/kissjared/php).
 
