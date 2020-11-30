@@ -14,7 +14,7 @@ This PHP docker image based on [kissjared/php](https://hub.docker.com/r/kissjare
 * Nginx vhost path:       `/etc/nginx/conf.d/*.conf`
 
 ## PHP Configuration
-* PHP version:            `PHP 7.4.3`
+* PHP version:            `PHP 7.4.13`
 * PHP FPM core config:    `/usr/local/etc/php-fpm.conf`
 * PHP FPM include config: `/usr/local/etc/php-fpm.d/`
 
