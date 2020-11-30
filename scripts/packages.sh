@@ -6,7 +6,5 @@ apk add --update --no-cache \
     libzip-dev \
     libzip \
     openssl-dev \
-    libressl3.0-libcrypto \
-    libressl3.0-libssl \
     nginx \
     supervisor 
